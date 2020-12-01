@@ -6,9 +6,6 @@
 
 html body {
   padding: 0;
-  margin-left: 350px;
-  margin-right: 350px;
-
   height: 100%;
 }
 
@@ -21,12 +18,14 @@ a{
   text-decoration: none;
   font-family: "montserrat";
   font-weight: 500;
-  color: #ededed;
+  color: #000;
   text-transform: uppercase;
 }
 
 p{
   color: black;
+  text-transform: capitalize;
+
 }
 
 li{
@@ -43,30 +42,48 @@ h1{
   font-size: 40px;
 }
 
-h2{
+.overskrift{
   font-family: "montserrat";
-  font-weight: 500;
+  font-weight: 400;
   color: #272727;
-  text-transform: lowercase;
-  font-size: 37px;
+  text-transform: capitalize;
+  font-size: 32px;
+  line-height: 120px;
 }
 
-h3{
+.hexkode{
   font-family: "montserrat";
   font-weight: 500;
   color: #272727;
-  text-transform: lowercase;
+  text-transform: uppercase;
+  font-size: 15px;
 }
+
+.rgb{
+  font-family: "montserrat";
+  font-weight: 500;
+  color: #272727;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.farvetype{
+  font-family: "montserrat";
+  font-weight: 200;
+  color: #272727;
+  font-size: 15px;
+}
+
 
 header{
 
-background-color: black;
+background-color: white;
 width: 100%;
 height: 75px;
 position: fixed;
 top: 0;
 left: 0;
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
 z-index: 1;
 
 }
@@ -95,110 +112,81 @@ text-decoration:underline;
 
 }
 
+.container{
+  max-width: 1000px;
+  margin: auto;
+
+}
+
 .wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     justify-content: space-between;
-    padding-top: 110px;
-
+    padding-top: 0px;
+    max-width: 55%;
 }
 
-  .kasse1{
-      background-color: #ededed;
-      height: 100px;
-      width: 100px;
-  }
-
-  .kasse2{
-      background-color: #d8d8d8;
-      height: 100px;
-      width: 100px;
-  }
-
-  .kasse3{
-      background-color: #c9c9c9;
-      height: 100px;
-      width: 100px;
-  }
-
-  .kasse4{
-      background-color: #b7b7b7;
-      height: 100px;
-      width: 100px;
-  }
-
-  .kasse5{
-      background-color: #a8a8a8;
-      height: 100px;
-      width: 100px;
-  }
-  .kasse6{
-      background-color: #939393;
-      height: 100px;
-      width: 100px;
-  }
-
-  .kasse7{
-      background-color: #7f7f7f;
-      height: 100px;
-      width: 100px;
-  }
-
-  .kasse8{
-      background-color: #fff;
-      border-color: #000;
-      height: 100px;
-      width: 100px;
-      border: 1px;
-      border-style: solid;
-  }
-
-.wrappertext{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 10px;
-  letter-spacing: 1px;
+.kassecontainer div span, p{
+    line-height: 27px;
 }
 
-.hexkasse1{
-margin-left: -27px;
 
-
-}
-.hexkasse2{
-margin-left: 14px;
-
-}
-.hexkasse3{
-margin-left: 13px;
+.kasse{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
 }
 
-.hexkasse4{
-margin-left: 5px;
+
+.kassecontainer:first-child .kasse {
+    background-color: #ffffff;
+    border: 1px solid #ededed;
 }
 
-.hexkasse5{
-margin-left: 10px;
+.kassecontainer:nth-child(2) .kasse {
+    background-color: #cfb1af;
 }
 
-.hexkasse8{
-padding-right: 7px;
+.kassecontainer:nth-child(3) .kasse {
+    background-color: #d8e0e5;
+}
 
+.kassecontainer:last-child .kasse {
+    background-color: #3c505e;
 }
 
 
 #Logo img{
 
-  padding-top: 110px;
+  padding-top: 0px;
   width: 250px;
   justify-content: center;
   align-items: center;
 }
 
-#logo h1{
-  margin-top: 20px;
+.figurgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 500px;
+    width: 100%;
+    grid-gap: 15px;
+}
+
+.figurgrid div:first-child{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: black;
+}
+
+.figurgrid div:nth-child(2){
+    background-color: lightgrey;
+}
+
+.figurgrid div:last-child{
+    background-color: grey;
 }
 
 #Typography{
@@ -244,74 +232,46 @@ padding-right: 7px;
 
 }
 
-h3{
-  padding-top: 60px;
-  font-weight: 400;
-  font-size: 24px;
-  text-transform: lowercase;
-  color: #272727;
-  font-family: helvetica;
-  width: 70%;
-  justify-content: center;
-}
-
-h4 {
-  text-transform: lowercase;
-  font-size: 17px;
-  font-family: helvetica;
-  font-weight: 100;
-  color: #272727;
-
-}
 
 #knapper{
-
 }
 
 .button{
   display: flex;
   align-items: center;
-  margin-top: 110px;
+  margin-top: 20px;
 
 }
 
 button{
-  color:  #000;
+  color:  #FFFFFF;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
-  background-color: #ededed;
-  border-color: black;
+  background-color: #3c505e;
+  border-color: #3c505e;
   border-style: solid;
   border-width: thin;
   border-radius: 28px;
   radius: 50%;
-  height: 32px;
-  position: absolute;
-  width: 8%;
-
+  height: 37px;
+  padding: 5px 40px 5px 40px;
 }
 
-.button-edit{
+.storknap{
+  padding: 22px 70px 22px 70px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 4.5%;
-  margin-bottom: 5%;
-  width: 100%;
-}
-
-.button-edit button{
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color:#ededed;
-  padding: 5px;
-  width: 5.5%;
-  color: #000000;
-  border-radius: 30px;
+}
 
-}'
+.lyserødknap{
+  padding: 22px 70px 22px 70px;
+  display: flex;
+  align-items: center;
+  background-color: #cfb1af;
+  border-color: #cfb1af;
+  margin: 20px 0px 40px 0px
+
+}
 
 #links{
 }
@@ -336,7 +296,7 @@ button{
   flex-direction: column;
   min-height: 50px;
   width: 27%;
-  margin-top: -30px;
+  margin-top: -150px;
   margin-left: 0px;
 
 
@@ -375,7 +335,8 @@ input{
     position: relative;
     margin-left: 0px;
     border-color: #272727;
-    margin-top: 70px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 
 }
 
@@ -408,4 +369,36 @@ input{
     font-size: 56px;
     font-weight: bold;
     content: "→";
+}
+
+
+@media screen and (max-width:1250px) {
+
+  .container{
+    max-width: 800px;
+  }
+  .wrapper{
+    max-width: 65%;
+  }
+
+}
+
+@media screen and (max-width:992px) {
+
+  .container{
+    max-width: 700px;
+  }
+  .wrapper{
+    max-width: 80%;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+
+  body{
+
+  background-color: blue;
+  }
+
 }

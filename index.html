@@ -14,7 +14,7 @@
       <div class="nav-wrapper">
         <ul>
             <li><a href="#farver">Farver</a></li>
-            <li><a href="#figure">figure</a></li>
+            <li><a href="#figur">figur</a></li>
             <li><a href="#typografi">Typografi</a></li>
             <li><a href="#knapper">Knapper</a></li>
             <li><a href="#forms">Formel</a></li>
@@ -25,56 +25,93 @@
     </nav>
 </header>
 
-<section id="farver">
-  <h2> Farver </h2>
-  <p> hej dette handler om farver </p>
-
+<section class="container">
+  <h1>Styleguide - Tracelet</h1>
+  <span class="overskrift">Farver</span>
     <div class="wrapper">
-      <div class="kasse1"> </div>
-      <div class="kasse2"> </div>
-      <div class="kasse3"> </div>
-      <div class="kasse4"> </div>
-      <div class="kasse5"> </div>
-      <div class="kasse6"> </div>
-      <div class="kasse7"> </div>
-      <div class="kasse8"> </div>
+      <div class="kassecontainer">
+        <div class="kasse"> </div>
+        <div>
+          <span class="hexkode">#ffffff</span>
+        </div>
+        <div>
+          <span class="rgb">rgb(255,255,255)</span>
+        </div>
+        <div>
+          <p class="farvetype">Primærfarve</p>
+        </div>
+      </div>
+
+      <div class="kassecontainer">
+        <div class="kasse"> </div>
+        <div>
+          <span class="hexkode">#cfb1af</span>
+        </div>
+        <div>
+          <span class="rgb">rgb(207,177,175)</span>
+        </div>
+        <div>
+          <p class="farvetype">Sekundær</p>
+        </div>
+      </div>
+
+      <div class="kassecontainer">
+        <div class="kasse"> </div>
+        <div>
+          <span class="hexkode">#d8e0e5</span>
+        </div>
+        <div>
+          <span class="rgb">rgb(216,224,229)</span>
+        </div>
+        <div>
+          <p class="farvetype">Sekundær</p>
+        </div>
+      </div>
+
+      <div class="kassecontainer">
+        <div class="kasse"> </div>
+        <div>
+          <span class="hexkode">#3c505e</span>
+        </div>
+        <div>
+          <span class="rgb">rgb(60,80,94)</span>
+        </div>
+        <div>
+          <p class="farvetype">knap farve</p>
+        </div>
+      </div>
     </div>
 
-    <div class="wrappertext">
-      <div class="hexkasse1">#272727</div>
-      <div class="hexkasse2">#717171</div>
-      <div class="hexkasse3">#E6B81C</div>
-      <div class="hexkasse4">#31525C</div>
-      <div class="hexkasse5">#82B5BE</div>
-      <div class="hexkasse6">#A0A0A0</div>
-      <div class="hexkasse7">#EDEDED</div>
-      <div class="hexkasse8">#FFFFFF</div>
-    </div>
 
-      <a href="#Logo">
 
 </section>
 
 
-<section id="Logo">
-  <h2> Logo </h2>
-  <a href="#figure">
-  <img src="logo.png" alt="Tracelet logo">
+<section class="container">
+  <span class="overskrift"> Logo </span>
+  <img src="images/logo.png" alt="Tracelet logo">
 </section>
 
 
-<section id="figure">
+<section class="container">
 
-<h2>Figure</h2>
-<p> hej dette handler om Illustrationer </p>
-<a href="#typografi">
-<img src="logo.png" alt="Tracelet logo">
+  <span class="overskrift"> Figure</span>
+  <div class="figurgrid">
+      <div>
+        <img src="" alt="">
+      </div>
+      <div>
+        <img src="" alt="">
+      </div>
+      <div>
+        <img src="" alt="">
+      </div>
+  </div>
 </section>
 
 
-
-<section id="typografi">
-  <h2> Typografi </h2>
+<section class="container">
+  <span class="overskrift"> Typografi </span>
 
   <div class="wrappertypography">
     <div class="boxtitle">Title h1<br>Main title h2<br>main text</div>
@@ -83,32 +120,27 @@
   </div>
 
   <div class="fonttype1">
-    <h3> Title fonttype - Helvetica </h3> <br>
-    <h4> main text - Montserrat </h4> <br>
-    <h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<h4>
-    <br>
+    <span> Title fonttype - Helvetica </span>
+    <span> main text - Montserrat </span>
+    <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span>
     </div>
-  <a href="#knapper">
 </section>
 
 
-<section id="knapper">
-  <h2> Knapper </h2>
-
-  <div class="button"><button type="submit" name="Sign up">knap</button></div>
+<section class="container">
+  <span class="overskrift"> Knapper </span>
 
   <div class="swipe"> <input type="range" class="slideToUnlock" value="0" max="100"> </div>
 
-  <div class="button-edit"><button>Log ind</button></div>
+  <button type="button" class="storknap">Click Me</button>
+  <button type="button" class="lyserødknap">Click Me</button>
+  <button type="button">Click Me</button>
 
-
-
-  <a href="#forms">
 </section>
 
 
-<section id="Forms">
-  <h2> Forms </h2>
+<section class="container">
+  <span class="overskrift"> Forms </span>
   <section class="input">
     <form>
       <input type="text" name="name" placeholder="Name">
