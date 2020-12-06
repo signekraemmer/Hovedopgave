@@ -3,6 +3,8 @@
 <head>
 <title>Forside</title>
 <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -77,7 +79,7 @@
           <span class="rgb">rgb(60,80,94)</span>
         </div>
         <div>
-          <p class="farvetype">knap farve</p>
+          <p class="farvetype">Knap farve</p>
         </div>
       </div>
     </div>
@@ -88,23 +90,22 @@
 
 
 <section class="container">
-  <span class="overskrift"> Logo </span>
+  <span class="overskrift"> Logo </span> <br>
   <img src="images/logo.png" alt="Tracelet logo">
 </section>
 
 
 <section class="container">
-
   <span class="overskrift"> Figure</span>
   <div class="figurgrid">
       <div>
-        <img src="" alt="">
+        <img src="images/pink.png" alt="">
       </div>
       <div>
-        <img src="" alt="">
+        <img src="images/light.png" alt="">
       </div>
       <div>
-        <img src="" alt="">
+        <img src="images/dark.png" alt="">
       </div>
   </div>
 </section>
@@ -114,30 +115,53 @@
   <span class="overskrift"> Typografi </span>
 
   <div class="wrappertypography">
-    <div class="boxtitle">Title h1<br>Main title h2<br>main text</div>
-    <div class="boxsize">40px<br>19px<br>14px</div>
-    <div class="boxregular">reuglar<br>regular<br>regular</div>
+    <div class="typograficontainer">
+      <h1>Overskrift forsiden h1</h1>
+      <h1>30px</h1>
+      <h1>medieum</h1>
+    </div>
+
+    <div class="typograficontainer">
+      <h2>Sidetitel h2</h2>
+      <h2>20px</h2>
+      <h2>medieum</h2>
+    </div>
+
+    <div class="typograficontainer">
+      <h3>Underoverskrifter</h3>
+      <h3>16px</h3>
+      <h3>semibold</h3>
+    </div>
+
+    <div class="paragraphcontainer">
+      <p>Paragraf</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
   </div>
 
-  <div class="fonttype1">
-    <span> Title fonttype - Helvetica </span>
-    <span> main text - Montserrat </span>
-    <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span>
-    </div>
 </section>
 
 
 <section class="container">
   <span class="overskrift"> Knapper </span>
 
-  <div class="swipe"> <input type="range" class="slideToUnlock" value="0" max="100"> </div>
-
-  <button type="button" class="storknap">Click Me</button>
-  <button type="button" class="lyserødknap">Click Me</button>
-  <button type="button">Click Me</button>
-
+<div class="bntwrapper">
+  <button type="button" class="storknap clickEvent">Click Me</button>
+  <button type="button" class="pink">Click Me</button>
+  <button class="clickEvent" type="button">Click Me</button>
+</div>
 </section>
 
+
+<section class="container">
+  <span class="overskrift"> Swipe </span>
+
+  <div class="swipe"> <input type="range" class="slideToUnlock" value="0" max="100"> </div>
+
+
+
+</section>
 
 <section class="container">
   <span class="overskrift"> Forms </span>
@@ -150,6 +174,8 @@
   </section>
 </section>
 
+<script type="text/javascript" src="style.js">
 
+</script>
 </body>
 </html>

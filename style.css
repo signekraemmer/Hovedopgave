@@ -24,8 +24,7 @@ a{
 
 p{
   color: black;
-  text-transform: capitalize;
-
+  font-family: "montserrat", sans-serif;
 }
 
 li{
@@ -36,10 +35,15 @@ li{
 h1{
 
   font-family: "montserrat";
-  font-weight: 500;
+  font-weight: 400;
   color: #272727;
-  text-transform: uppercase;
   font-size: 40px;
+}
+
+hr {
+width: 10%;
+margin-top: 10px;
+height: 10px;
 }
 
 .overskrift{
@@ -48,7 +52,9 @@ h1{
   color: #272727;
   text-transform: capitalize;
   font-size: 32px;
-  line-height: 120px;
+  line-height: 170px;
+  border-top: #cfb1af solid 2px;
+  padding-top: 7px;
 }
 
 .hexkode{
@@ -63,7 +69,6 @@ h1{
   font-family: "montserrat";
   font-weight: 500;
   color: #272727;
-  text-transform: uppercase;
   font-size: 15px;
 }
 
@@ -127,7 +132,7 @@ text-decoration:underline;
     max-width: 55%;
 }
 
-.kassecontainer div span, p{
+.kassecontainer div span, .kassecontainer div p{
     line-height: 27px;
 }
 
@@ -157,20 +162,14 @@ text-decoration:underline;
 }
 
 
-#Logo img{
 
-  padding-top: 0px;
-  width: 250px;
-  justify-content: center;
-  align-items: center;
-}
 
 .figurgrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 500px;
-    width: 100%;
+    width: 120%;
     grid-gap: 15px;
 }
 
@@ -178,15 +177,19 @@ text-decoration:underline;
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: black;
+    width: 100%;
+}
+
+.figurgrid div img{
+    width: 100%;
 }
 
 .figurgrid div:nth-child(2){
-    background-color: lightgrey;
+    width: 50%;
 }
 
 .figurgrid div:last-child{
-    background-color: grey;
+    width: 50%;
 }
 
 #Typography{
@@ -195,52 +198,91 @@ text-decoration:underline;
   align-items: center;
 }
 
+/* typografi section */
+
 .wrappertypography{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  padding-top: 100px;
-  letter-spacing: 1px;
   color: #272727;
-  font-size: 25px;
-  line-height: 47px;
 }
 
-
-.boxtitle {
+.typograficontainer{
   display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 33.33%;
-}
-.boxsize{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 33.33%;
-}
-.boxregular{
-  display: flex;
-  flex-direction: column;
-  width: 33.33%;
+  width: 100%;
 }
 
-.fonttype1{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
+.typograficontainer h1{
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "montserrat",sans-serif;
+  margin-bottom: 20px;
 }
 
+.typograficontainer h1:first-child{
+  width: 60%;
+}
+
+.typograficontainer h1:nth-child(2){
+  width: 20%;
+}
+
+
+.typograficontainer h2{
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "montserrat",sans-serif;
+  margin-bottom: 20px;
+}
+
+.typograficontainer h2:first-child{
+  width: 60%;
+}
+
+.typograficontainer h2:nth-child(2){
+  width: 20%;
+}
+
+.typograficontainer h3{
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "montserrat",sans-serif;
+  margin-bottom: 20px;
+}
+
+.typograficontainer h3:first-child{
+  width: 60%;
+}
+
+.typograficontainer h3:nth-child(2){
+  width: 20%;
+}
+
+.paragraphcontainer p:first-child{
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+
+
+.paragraphcontainer p:last-child{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
 
 #knapper{
+}
+
+
+.bntwrapper{
+  display: flex;
+  align-items: center;
 }
 
 .button{
   display: flex;
   align-items: center;
   margin-top: 20px;
-
 }
 
 button{
@@ -255,6 +297,7 @@ button{
   radius: 50%;
   height: 37px;
   padding: 5px 40px 5px 40px;
+  margin-right: 40px;
 }
 
 .storknap{
@@ -263,13 +306,12 @@ button{
   align-items: center;
 }
 
-.lyserødknap{
+.pink{
   padding: 22px 70px 22px 70px;
   display: flex;
   align-items: center;
   background-color: #cfb1af;
   border-color: #cfb1af;
-  margin: 20px 0px 40px 0px
 
 }
 
