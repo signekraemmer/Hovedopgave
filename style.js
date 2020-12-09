@@ -1,9 +1,15 @@
-document.getElementsByClassName("clickEvent").onclick = function() {myFunction()};
+const btn = document.querySelector('.clickEvent')
 
-function myFunction() {
-  document.getElementsByClassName("clickEvent").style.color = "#3c505e"
+btn.addEventListener('click', function(){
+  btn.style.backgroundColor = '#fff';
+  btn.style.border = '#3c505e solid 2px';
+  btn.style.color = '#3c505e';
+  btn.style.transition = 'all 0.7s';
 
-  document.getElementsByClassName("clickEvent").style.border = "#3c505e solid 1px"
+  setTimeout(function(){
+    btn.style.backgroundColor = '#3c505e';
+    btn.style.border = '#3c505e solid 2px';
+    btn.style.color = '#fff';
 
-  document.getElementsByClassName("clickEvent").style.backgroundColor = "#ffffff"
-}
+  }, 700)
+})

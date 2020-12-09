@@ -5,22 +5,23 @@
 <link rel="stylesheet" href="style.css">
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/trade-gothic-lt-std" rel="stylesheet">
+
 </head>
 <body>
 
 <header>
-
-
     <nav>
 
       <div class="nav-wrapper">
         <ul>
             <li><a href="#farver">Farver</a></li>
-            <li><a href="#figur">figur</a></li>
+            <li><a href="#logo">Logo</a></li>
+            <li><a href="#figur">Figur</a></li>
             <li><a href="#typografi">Typografi</a></li>
             <li><a href="#knapper">Knapper</a></li>
+            <li><a href="#swipe">Swipe</a></li>
             <li><a href="#forms">Formel</a></li>
-            <li><a href="#select">select</a></li>
 
         </ul>
       </div>
@@ -84,19 +85,17 @@
       </div>
     </div>
 
-
-
 </section>
 
 
-<section class="container">
+<section class="container" id="logo">
   <span class="overskrift"> Logo </span> <br>
   <img src="images/logo.png" alt="Tracelet logo">
 </section>
 
 
-<section class="container">
-  <span class="overskrift"> Figure</span>
+<section class="container" id="figur">
+  <span class="overskrift">Figur</span>
   <div class="figurgrid">
       <div>
         <img src="images/pink.png" alt="">
@@ -111,26 +110,26 @@
 </section>
 
 
-<section class="container">
+<section class="container" id="typografi">
   <span class="overskrift"> Typografi </span>
 
   <div class="wrappertypography">
     <div class="typograficontainer">
       <h1>Overskrift forsiden h1</h1>
       <h1>30px</h1>
-      <h1>medieum</h1>
+      <h1>Medieum</h1>
     </div>
 
     <div class="typograficontainer">
       <h2>Sidetitel h2</h2>
       <h2>20px</h2>
-      <h2>medieum</h2>
+      <h2>Medieum</h2>
     </div>
 
     <div class="typograficontainer">
       <h3>Underoverskrifter</h3>
       <h3>16px</h3>
-      <h3>semibold</h3>
+      <h3>Semibold</h3>
     </div>
 
     <div class="paragraphcontainer">
@@ -143,27 +142,25 @@
 </section>
 
 
-<section class="container">
+<section class="container" id="knapper">
   <span class="overskrift"> Knapper </span>
 
 <div class="bntwrapper">
   <button type="button" class="storknap clickEvent">Click Me</button>
   <button type="button" class="pink">Click Me</button>
-  <button class="clickEvent" type="button">Click Me</button>
+  <button type="button" class="clickEvent">Click Me</button>
 </div>
 </section>
 
 
-<section class="container">
+<section class="container" id="swipe">
   <span class="overskrift"> Swipe </span>
 
   <div class="swipe"> <input type="range" class="slideToUnlock" value="0" max="100"> </div>
 
-
-
 </section>
 
-<section class="container">
+<section class="container" id="forms">
   <span class="overskrift"> Forms </span>
   <section class="input">
     <form>
@@ -173,6 +170,8 @@
     </form>
   </section>
 </section>
+<footer>
+</footer>
 
 <script type="text/javascript" src="style.js">
 
