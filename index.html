@@ -15,11 +15,11 @@
 
       <div class="nav-wrapper">
         <ul>
-            <li><a href="#farver">Farver</a></li>
+            <li><a href="#color">Farver</a></li>
             <li><a href="#logo">Logo</a></li>
-            <li><a href="#figur">Figur</a></li>
-            <li><a href="#typografi">Typografi</a></li>
-            <li><a href="#knapper">Knapper</a></li>
+            <li><a href="#figure">Figur</a></li>
+            <li><a href="#typography">Typografi</a></li>
+            <li><a href="#buttons">Knapper</a></li>
             <li><a href="#swipe">Swipe</a></li>
             <li><a href="#forms">Formel</a></li>
 
@@ -28,59 +28,59 @@
     </nav>
 </header>
 
-<section class="container">
+<section class="container" id="color">
   <h1>Styleguide - Tracelet</h1>
-  <span class="overskrift">Farver</span>
+  <span class="title">Farver</span>
     <div class="wrapper">
-      <div class="kassecontainer">
+      <div class="boxcontainer">
         <div class="kasse"> </div>
         <div>
-          <span class="hexkode">#ffffff</span>
-        </div>
-        <div>
-          <span class="rgb">rgb(255,255,255)</span>
-        </div>
-        <div>
-          <p class="farvetype">Primærfarve</p>
-        </div>
-      </div>
-
-      <div class="kassecontainer">
-        <div class="kasse"> </div>
-        <div>
-          <span class="hexkode">#cfb1af</span>
-        </div>
-        <div>
-          <span class="rgb">rgb(207,177,175)</span>
-        </div>
-        <div>
-          <p class="farvetype">Sekundær</p>
-        </div>
-      </div>
-
-      <div class="kassecontainer">
-        <div class="kasse"> </div>
-        <div>
-          <span class="hexkode">#d8e0e5</span>
-        </div>
-        <div>
-          <span class="rgb">rgb(216,224,229)</span>
-        </div>
-        <div>
-          <p class="farvetype">Sekundær</p>
-        </div>
-      </div>
-
-      <div class="kassecontainer">
-        <div class="kasse"> </div>
-        <div>
-          <span class="hexkode">#3c505e</span>
+          <span class="hex">#3c505e</span>
         </div>
         <div>
           <span class="rgb">rgb(60,80,94)</span>
         </div>
         <div>
-          <p class="farvetype">Knap farve</p>
+          <p class="colortype">Primærfarve</p>
+        </div>
+      </div>
+
+      <div class="boxcontainer">
+        <div class="kasse"> </div>
+        <div>
+          <span class="hex">#d8e0e5</span>
+        </div>
+        <div>
+          <span class="rgb">rgb(216,224,229)</span>
+        </div>
+        <div>
+          <p class="colortype">Sekundær</p>
+        </div>
+      </div>
+
+      <div class="boxcontainer">
+        <div class="kasse"> </div>
+        <div>
+          <span class="hex">#cfb1af</span>
+        </div>
+        <div>
+          <span class="rgb">rgb(207,177,175)</span>
+        </div>
+        <div>
+          <p class="colortype">Sekundær</p>
+        </div>
+      </div>
+
+      <div class="boxcontainer">
+        <div class="kasse"> </div>
+        <div>
+          <span class="hex">#ffffff</span>
+        </div>
+        <div>
+          <span class="rgb">rgb(0,0,0)</span>
+        </div>
+        <div>
+          <p class="colortype">Baggrund</p>
         </div>
       </div>
     </div>
@@ -89,48 +89,70 @@
 
 
 <section class="container" id="logo">
-  <span class="overskrift"> Logo </span> <br>
+  <span class="title"> Logo </span> <br>
   <img src="images/logo.png" alt="Tracelet logo">
+  <img src="images/negativtlogo.png" class="logocontainer" alt="Tracelet logo">
+
+
+  </div>
 </section>
 
 
-<section class="container" id="figur">
-  <span class="overskrift">Figur</span>
+<section class="container" id="figure">
+  <span class="title">Figur</span>
   <div class="figurgrid">
       <div>
-        <img src="images/pink.png" alt="">
+        <img src="images/dark.png" alt="">
       </div>
       <div>
         <img src="images/light.png" alt="">
       </div>
       <div>
-        <img src="images/dark.png" alt="">
+        <img src="images/pink.png" alt="">
       </div>
   </div>
 </section>
 
 
-<section class="container" id="typografi">
-  <span class="overskrift"> Typografi </span>
+<section class="container" id="typography">
+  <span class="title"> Typografi </span>
 
   <div class="wrappertypography">
-    <div class="typograficontainer">
-      <h1>Overskrift forsiden h1</h1>
+
+    <span>Trade Gothic LT Std</span>
+    <div class="typographycontainer">
+      <h1>Forside h1</h1>
       <h1>30px</h1>
-      <h1>Medieum</h1>
+      <h1>Medium</h1>
     </div>
 
-    <div class="typograficontainer">
+    <div class="typographycontainer">
       <h2>Sidetitel h2</h2>
       <h2>20px</h2>
-      <h2>Medieum</h2>
+      <h2>Medium</h2>
     </div>
 
-    <div class="typograficontainer">
-      <h3>Underoverskrifter</h3>
-      <h3>16px</h3>
-      <h3>Semibold</h3>
+    <span>Montserrat</span>
+
+
+    <div class="typographycontainer">
+      <h3>Overskrift h3</h3>
+      <h3>18px</h3>
+      <h3>Bold</h3>
     </div>
+
+    <div class="typographycontainer">
+      <h4>Underoverskrift h4</h4>
+      <h4>16px</h4>
+      <h4>Bold</h4>
+    </div>
+
+    <div class="typographycontainer">
+      <h5>Kommentarer h5</h5>
+      <h5>16px</h5>
+      <h5>Bold</h5>
+    </div>
+
 
     <div class="paragraphcontainer">
       <p>Paragraf</p>
@@ -142,26 +164,27 @@
 </section>
 
 
-<section class="container" id="knapper">
-  <span class="overskrift"> Knapper </span>
+<section class="container" id="buttons">
+  <span class="title"> Knapper </span>
 
 <div class="bntwrapper">
-  <button type="button" class="storknap clickEvent">Click Me</button>
+  <button type="button" id="clickEvent" class="storknap" onclick="colorChange()">Click Me</button>
   <button type="button" class="pink">Click Me</button>
-  <button type="button" class="clickEvent">Click Me</button>
+  <button type="button" id="click" class="clickEvent" onclick="colorSwitch()">Click Me</button>
 </div>
 </section>
 
 
 <section class="container" id="swipe">
-  <span class="overskrift"> Swipe </span>
+  <span class="title"> Swipe </span>
 
   <div class="swipe"> <input type="range" class="slideToUnlock" value="0" max="100"> </div>
+
 
 </section>
 
 <section class="container" id="forms">
-  <span class="overskrift"> Forms </span>
+  <span class="title"> Forms </span>
   <section class="input">
     <form>
       <input type="text" name="name" placeholder="Name">
