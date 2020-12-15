@@ -1,12 +1,12 @@
 // burger menu
 
   function burgerMenu() {
-      var burger = document.getElementById("bugerBar");
+      var burger = document.getElementById("burgerBar");
       var burgerMargin = document.getElementById("color");
 
       if (burger.style.display === "flex") {
           burger.style.display = "none";
-          burgerMargin.style.marginTop = "70px";
+          burgerMargin.style.marginTop = "100px";
 
       } else {
           burger.style.display = "flex";

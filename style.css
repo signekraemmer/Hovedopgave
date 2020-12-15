@@ -108,7 +108,6 @@ h1{
 .container{
   max-width: 1000px;
   margin: auto;
-
 }
 
 
@@ -458,13 +457,13 @@ button{
 }
 
 .swipe input[type="range"]:before {
-    content: "Aktiver lokalition";
+    content: "Aktiver lokation";
     color: #fff;
     position: absolute;
     left: 75px;
-    top: 11px;
+    top: 12px;
     z-index: 1;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .swipe input[type="range"]::-webkit-slider-thumb:before {
@@ -485,7 +484,7 @@ button{
   flex-direction: column;
   min-height: 50px;
   width: 27%;
-  margin-top: -150px;
+  margin-top: -100px;
   margin-left: 0px;
 }
 
@@ -550,7 +549,7 @@ footer{
   padding: 0;
 }
 #color {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .title{
@@ -573,8 +572,8 @@ header nav {
 /* Navigation */
 #burgerButton {
   position: absolute;
-  top: 0;
-  right: 15px;
+  top: 28px;
+  right: 20px;
   display: block;
 }
 .nav-wrapper {
@@ -582,13 +581,16 @@ header nav {
   justify-content: center;
   width: 100%;
   margin: 0;
+  min-height: 75px;
 }
-#bugerBar {
+#burgerBar {
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
   display: none;
 }
+
+
 .nav-wrapper ul li {
   width: 100%;
   display: flex;
@@ -601,7 +603,17 @@ header nav {
 
     .boxcontainer {
       width: 50%;
+      margin-bottom: 25px;
     }
+
+    .boxcontainer .kasse{
+      margin: auto;
+    }
+
+    .boxcontainer div{
+      text-align: center;
+    }
+
   /* logo  */
   #logo img {
     width: 100%;
@@ -672,10 +684,18 @@ header nav {
   .bntwrapper button:last-child{
 
     width: 50%;
-
   }
 
+  /* Swipe */
+
+  .swipe{
+  justify-content: center;
+  display: flex;
+  }
+
+
   /* Forms */
+
   #forms .input {
     width: 90%;
   }
