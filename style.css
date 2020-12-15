@@ -450,7 +450,6 @@ button{
     -webkit-appearance: none;
     border-radius: 15px;
     background: -webkit-linear-gradient(top, #d8e0e5 0%,#fff 50%,#fff 51%,#d8e0e5 100%);
-    z-index: 1;
     width: 40px;
     position: relative;
     height: 40px;
@@ -462,7 +461,6 @@ button{
     position: absolute;
     left: 75px;
     top: 12px;
-    z-index: 1;
     font-size: 16px;
 }
 
@@ -471,7 +469,6 @@ button{
     position: absolute;
     left: 5px;
     top: -10px;
-    z-index: 1;
     font-size: 56px;
     font-weight: bold;
     content: "→";
