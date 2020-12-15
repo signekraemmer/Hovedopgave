@@ -4,6 +4,7 @@
 <title>Forside</title>
 <link rel="stylesheet" href="style.css">
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link href="http://fonts.cdnfonts.com/css/trade-gothic-lt-std" rel="stylesheet">
 
@@ -14,7 +15,7 @@
     <nav>
 
       <div class="nav-wrapper">
-        <ul>
+        <ul id="burgerBar">
             <li><a href="#color">Farver</a></li>
             <li><a href="#logo">Logo</a></li>
             <li><a href="#figure">Figur</a></li>
@@ -24,6 +25,10 @@
             <li><a href="#forms">Formel</a></li>
 
         </ul>
+      </div>
+  <!-- Burger sektion -->
+      <div>
+          <a id="burgerButton" onclick="burgerMenu()" style="font-size: 50px;"  >+</a>
       </div>
     </nav>
 </header>
@@ -169,7 +174,7 @@
 
 <div class="bntwrapper">
   <button type="button" id="clickEvent" class="storknap" onclick="colorChange()">Click Me</button>
-  <button type="button" class="pink">Click Me</button>
+  <button type="button" id="clickOn" class="pink" onclick="colorShift()">Click Me</button>
   <button type="button" id="click" class="clickEvent" onclick="colorSwitch()">Click Me</button>
 </div>
 </section>

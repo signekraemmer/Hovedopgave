@@ -40,7 +40,6 @@ a:hover::after{
   transform-origin:left;
 }
 
-
 li{
   list-style-type: none;
   padding-top: 20px;
@@ -48,15 +47,14 @@ li{
 }
 
 header{
-
-background-color: white;
-width: 100%;
-height: 75px;
-position: fixed;
-top: 0;
-left: 0;
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
-z-index: 1;
+  background-color: white;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+  z-index: 1;
 
 }
 
@@ -74,11 +72,16 @@ header nav ul li a{
   font-size: 16px;
 }
 
+#burgerButton {
+display: none;
+z-index: 1000;
+}
+
 /* Overordnet */
 
 section{
 min-height: 100%;
-padding-top: 150px;
+padding-top: 100px;
 }
 
 h1{
@@ -99,6 +102,7 @@ h1{
   border-top: #cfb1af solid 2px;
   padding-top: 7px;
 }
+/* Hver section ligger i en container */
 
 .container{
   max-width: 1000px;
@@ -108,6 +112,15 @@ h1{
 
 
 /* Color section */
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-content: space-between;
+    padding-top: 0px;
+    max-width: 55%;
+}
 
 .hex{
   font-family: "montserrat";
@@ -131,15 +144,7 @@ h1{
   font-size: 15px;
 }
 
-
-.wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    justify-content: space-between;
-    padding-top: 0px;
-    max-width: 55%;
-}
+/* boxcontainer er de forskellige farvede kasser */
 
 .boxcontainer div span, .boxcontainer div p{
     line-height: 27px;
@@ -170,15 +175,16 @@ h1{
     background-color: #fff;
     border: 1px solid #ededed;
 }
+
+
 /* Logo */
 
-
+/* Baggrund på negativtlogo */
 
 .logocontainer{
   background-color: #3c505e;
   padding: 1px;
   margin-top: 25px;
-
 }
 
 /* Figure section */
@@ -192,6 +198,8 @@ h1{
     grid-gap: 15px;
 }
 
+/* Mørkeblå figur */
+
 .figurgrid div:first-child{
     grid-column-start: 1;
     grid-row-start: 1;
@@ -203,9 +211,13 @@ h1{
     width: 100%;
 }
 
+/* Lyseblå figur */
+
 .figurgrid div:nth-child(2){
     width: 60%;
 }
+
+/* Lyserød figur */
 
 .figurgrid div:last-child{
     width: 50%;
@@ -222,6 +234,7 @@ h1{
   width: 100%;
 }
 
+/* h1  */
 .typographycontainer h1{
   font-size: 40px;
   font-weight: 400;
@@ -244,6 +257,8 @@ h1{
   text-align: right;
 }
 
+/* h2 */
+
 .typographycontainer h2{
   font-size: 30px;
   font-weight: 400;
@@ -264,6 +279,8 @@ h1{
   width: 20%;
   text-align: right;
 }
+
+/* h3 */
 
 .typographycontainer h3{
   font-size: 18px;
@@ -287,6 +304,8 @@ h1{
   text-align: right;
 }
 
+/* h4 */
+
 .typographycontainer h4:first-child{
   width: 60%;
 }
@@ -306,6 +325,8 @@ h1{
   font-family: "montserrat",sans-serif;
   margin-bottom: 20px;
 }
+
+/* h5 */
 
 .typographycontainer h5:first-child{
   width: 60%;
@@ -328,6 +349,8 @@ h1{
   margin-bottom: 20px;
 }
 
+/* fonttype */
+
 .wrappertypography span{
   color: #cfb1af;
   font-size: 14px;
@@ -335,6 +358,8 @@ h1{
   font-family: "montserrat",sans-serif;
 
 }
+
+/* Brødtekst */
 
 .paragraphcontainer p:first-child{
   font-weight: 600;
@@ -400,6 +425,8 @@ button{
 
 /* Swipe button */
 
+/* Selve den lange mørkeblå */
+
 .swipe input[type="range"] {
     width: 280px;
     height: 40px;
@@ -415,6 +442,8 @@ button{
     margin-bottom: 40px;
 
 }
+
+/* Selve knappen man swiper */
 
 .swipe input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -509,18 +538,137 @@ footer{
 
 }
 
-@media screen and (max-width:768px) {
 
-  body{
 
-  background-color: blue;
-  }
+
+@media only screen and (max-width: 600px) {
+/* Gennerelt  */
+ .container {
+  max-width: 90%;
+  padding: 0;
+}
+#color {
+  margin-top: 70px;
 }
 
-@media screen and (max-width:600px;) {
+.title{
+  margin-bottom: -10px;
+}
 
-  body{
+h1 {
+  font-size: 26px;
+}
+header {
+  height: auto;
+}
+header nav {
+  margin: 0;
+}
+.wrapper {
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+/* Navigation */
+#burgerButton {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: block;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+#bugerBar {
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  display: none;
+}
+.nav-wrapper ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  }
+  .nav-wrapper ul li:last-child {
+    margin-bottom: 25px;
+    }
 
-  background-color: red;
+    .boxcontainer {
+      width: 50%;
+    }
+  /* logo  */
+  #logo img {
+    width: 100%;
+  }
+  /* Figur  */
+  .figurgrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    width: 100%;
+    grid-gap: 1px;
+  }
+  .figurgrid img {
+    width: 100%;;
+  }
+
+  /* Lyseblå figur */
+
+  .figurgrid div:nth-child(2){
+      width: 90%;
+  }
+
+  /* Lyserød figur */
+
+  .figurgrid div:last-child{
+      width: 80%;
+  }
+
+  /* Typografi */
+  .typographycontainer h1 {
+    font-size: 24px;
+  }
+  .typographycontainer h1:first-child {
+    width: 52%;
+  }
+  .typographycontainer h2 {
+    font-size: 20px;
+  }
+  .typographycontainer h2:first-child {
+    width: 54%;
+  }
+  .typographycontainer h3 {
+    font-size: 16px;
+  }
+  .typographycontainer h3:first-child {
+    width: 60%;
+  }
+  /* buttons */
+
+  .bntwrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .bntwrapper button {
+    margin: 15px 0;
+    width: 75%;
+  }
+
+  .storknap {
+    justify-content: center;
+  }
+
+  .pink{
+    justify-content: center;
+  }
+
+  /* Forms */
+  #forms .input {
+    width: 90%;
   }
 }
